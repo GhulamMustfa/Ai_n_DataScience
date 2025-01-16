@@ -5,7 +5,7 @@ if num > 1:
         if num % prime == 0:
             print("Its not a prime number. ") 
             break
-        else:
-            print("Its a prime number.")
+    else:
+        print("Its a prime number.")
 else:
     print("its not a prime number")
