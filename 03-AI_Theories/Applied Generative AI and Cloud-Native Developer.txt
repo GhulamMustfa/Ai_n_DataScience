@@ -1,0 +1,145 @@
+﻿https://github.com/techloset/agentic-ai
+
+
+
+
+Applied Generative AI Cloud-Native Developer
+
+
+1. Artificial Intelligence (AI)
+* Definition: The simulation of human intelligence in machines designed to think and act like humans.
+* Example: Virtual personal assistants like Siri and Alexa.
+2. Machine Learning (ML)
+* Definition: A subset of AI focused on building systems that learn from data to improve performance over time.
+* Example: Email spam filters.
+3. Deep Learning (DL)
+* Definition: A subset of ML that uses neural networks with many layers to analyze various factors of data.
+* Example: Autonomous driving systems.
+4. Supervised Learning
+* Definition: Training an algorithm with labeled data.
+* Example: Predicting house prices based on historical data.
+5. Unsupervised Learning
+* Definition: Training an algorithm on data without labels.
+* Example: Clustering customers based on purchase behavior.
+6. Reinforcement Learning (RL)
+* Definition: A type of ML where an agent learns to make decisions by receiving rewards for its actions.
+* Example: Training robots to play soccer.
+7. Neural Network (NN)
+* Definition: A series of algorithms that mimic the operations of a human brain to recognize relationships in data.
+* Example: Recognizing handwritten digits.
+8. Convolutional Neural Network (CNN)
+* Definition: A deep learning algorithm primarily used for image processing.
+* Example: Facial recognition systems.
+9. Recurrent Neural Network (RNN)
+* Definition: A type of NN where connections between nodes form a directed graph along a temporal sequence.
+* Example: Language modeling and translation.
+
+
+11. Overfitting
+* Definition: When a model learns the training data too well, including noise and outliers, and performs poorly on new data.
+* Example: A complex model that performs well on training data but poorly on test data.
+12. Underfitting
+* Definition: When a model is too simple to capture the underlying patterns in the data.
+* Example: A linear model used for complex, non-linear data.
+13. Cross-validation
+* Definition: A technique for assessing how the results of a statistical analysis will generalize to an independent dataset.
+* Example: 10-fold cross-validation in model training.
+14. Hyperparameter Tuning
+* Definition: The process of optimizing the parameters that control the learning process.
+* Example: Grid search for finding the best learning rate.
+15. Backpropagation
+* Definition: An algorithm for training neural networks by propagating the error gradient backward through the network.
+* Example: Used in training deep neural networks.
+16. Dropout
+* Definition: A regularization technique where randomly selected neurons are ignored during training to prevent overfitting.
+* Example: Dropout layers in CNNs.
+17. Batch Normalization
+* Definition: A technique to improve training speed and stability by normalizing inputs in each mini-batch.
+* Example: Batch normalization in deep networks.
+18. Transfer Learning
+* Definition: Applying a pre-trained model to a new but related problem.
+* Example: Using a model trained on ImageNet for medical image classification.
+19. Generative Adversarial Networks (GANs)
+* Definition: A class of ML systems where two networks, a generator and a discriminator, compete against each other.
+* Example: Generating realistic human faces.
+20. Natural Language Processing (NLP)
+* Definition: The field of AI focused on the interaction between computers and humans through natural language.
+* Example: Chatbots and language translation services.
+21. Computer Vision
+* Definition: A field of AI that enables computers to interpret and make decisions based on visual data.
+* Example: Image classification and object detection.
+22. Autonomous Systems
+* Definition: Systems capable of performing tasks without human intervention.
+* Example: Self-driving cars.
+23. Accuracy
+* Definition: The ratio of correctly predicted instances to the total instances.
+* Example: A model with 90% accuracy.
+24. Precision and Recall
+* Precision: The ratio of correctly predicted positive instances to the total predicted positives.
+* Recall: The ratio of correctly predicted positive instances to all actual positives.
+* Example: Evaluating a disease detection system.
+25. F1 Score
+* Definition: The harmonic mean of precision and recall.
+* Example: Used for evaluating classification models.
+26. Confusion Matrix
+* Definition: A table used to describe the performance of a classification model.
+* Example: Used to visualize true vs. predicted classes.
+27. Support Vector Machine (SVM)
+* Definition: A supervised ML algorithm that can be used for classification or regression.
+* Example: Classifying emails as spam or not spam.
+28. Decision Tree
+* Definition: A model that uses a tree-like graph of decisions and their possible consequences.
+* Example: Used in loan approval systems.
+29. Random Forest
+* Definition: An ensemble learning method that constructs multiple decision trees.
+* Example: Used for feature selection and classification.
+30. K-Nearest Neighbors (KNN)
+* Definition: A simple, instance-based learning algorithm.
+* Example: Used in recommendation systems.
+31. Principal Component Analysis (PCA)
+* Definition: A technique for reducing the dimensionality of datasets.
+* Example: Used in exploratory data analysis.
+32. K-Means Clustering
+* Definition: An unsupervised learning algorithm for clustering data into K clusters.
+* Example: Customer segmentation.
+33. Recurrent Neural Networks (RNN)
+* Definition: Networks with loops allowing information to persist.
+* Example: Time series forecasting.
+34. Long Short-Term Memory (LSTM)
+* Definition: A type of RNN capable of learning long-term dependencies.
+* Example: Speech recognition.
+35. Attention Mechanism
+* Definition: A technique that allows models to focus on specific parts of the input sequence.
+* Example: Machine translation.
+36. Transformer Model
+* Definition: An architecture that uses self-attention mechanisms.
+* Example: BERT and GPT models.
+37. Autoencoder
+* Definition: A type of neural network used to learn efficient codings of input data.
+* Example: Image denoising.
+Practical Tools and Libraries
+38. TensorFlow
+* Definition: An open-source ML framework developed by Google.
+* Example: Training deep learning models.
+39. PyTorch
+* Definition: An open-source ML library developed by Facebook.
+* Example: Building and training neural networks.
+40. scikit-learn
+* Definition: A Python library for ML, built on NumPy, SciPy, and matplotlib.
+* Example: Implementing various ML algorithms.
+41. Keras
+* Definition: A high-level neural networks API.
+* Example: Simplifying the creation of complex neural networks.
+42. OpenAI GPT
+* Definition: A series of language models developed by OpenAI.
+* Example: Text generation and language understanding.
+43. Pandas
+* Definition: A data manipulation and analysis library for Python.
+* Example: Handling dataframes in ML projects.
+44. NumPy
+* Definition: A fundamental package for scientific computing with Python.
+* Example: Handling arrays and matrices.
+By understanding these terms and concepts in depth, your students will be well-equipped to grasp the foundational and advanced topics in AI, machine learning, and deep learning.
+Regards: 
+Naveed Sarwar
+Youtube Facebook WhatsApp Channel
