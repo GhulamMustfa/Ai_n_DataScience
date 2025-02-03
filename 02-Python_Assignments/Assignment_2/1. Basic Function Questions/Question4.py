@@ -3,4 +3,4 @@ def reverse(s):
 
 s = input("Enter a string: ")
 
-print(f"The reverse of string {s} is : {reverse(s)}")
+print(f"The reverse of string of {s} is : {reverse(s)}")
