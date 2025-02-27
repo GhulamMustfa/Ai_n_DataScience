@@ -1,11 +1,11 @@
 # poetry add python-multipart
-from fastapi import FastAPI,File, UploadFile # type: ignore
+from fastapi import FastAPI, File, UploadFile # type: ignore
 from fastapi.staticfiles import StaticFiles # type: ignore
 
 import shutil
 import os
 
-UPLOAD_FOLDER = "5-FastAPI\Student_Portal\Handel"  # Define the folder to store uploaded files
+UPLOAD_FOLDER = "05-FastAPI\Practice"  # Define the folder to store uploaded files
 
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 

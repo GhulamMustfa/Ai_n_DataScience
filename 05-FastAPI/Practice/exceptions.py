@@ -1,4 +1,5 @@
-from fastapi import FastAPI # type: ignore
+from fastapi import FastAPI, HTTPException, File, UploadFile # type: ignore
+from pydantic import BaseModel,EmailStr,Field # type: ignore
 from fastapi.responses import JSONResponse # type: ignore
 from fastapi.exceptions import RequestValidationError # type: ignore
 from fastapi import Request # type: ignore
@@ -25,3 +26,21 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
         }
     )
 
+@app.post("/upload/")
+async def upload_file(file: UploadFile = File(...)):
+    return {"filename": file.filename}
+
+
+# Pydantic Validations 
+class Student(BaseModel):
+    name: str
+    age: int
+    email: EmailStr
+    address: str = Field(None, title="Address", max_length=50)
+
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: str, student: Student):
+    if item_id == 0:
+        raise HTTPException(status_code=404, detail="Item not found")
+    return {"item_id": item_id}
