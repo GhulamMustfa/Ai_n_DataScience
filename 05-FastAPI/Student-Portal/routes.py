@@ -1,5 +1,5 @@
-from fastapi import APIRouter, Depends, HTTPException, Path, Query, Body# type: ignore
-from Classes.models import Student, emailUpdate
+from fastapi import APIRouter, Depends, HTTPException, Path, Query, Body # type: ignore
+from .models import Student, emailUpdate
 
 
 authRouter = APIRouter()
@@ -23,14 +23,14 @@ def register_student(student: Student):
         raise HTTPException(status_code=400, detail=str(e))
 
 
-@authRouter.put("/students/update/{student_id}/email")
+@authRouter.put("/students/update/{student_id}/email" , tags=["CRUD"])
 def update_email(student_id: int = Path(ge=1000, le=9999, description="Student ID between 1000 - 9999"),
                  email: emailUpdate = Body(...)):
     return {"Student_id": student_id,
             "Email": email.email}
 
 
-@authRouter.delete("/students/delete/{student_id}")
+@authRouter.delete("/students/delete/{student_id}" , tags=["CRUD"])
 def delete_student(student_id: int = Path(ge=1000, le=9999, description="Student ID between 1000 - 9999")):
     return {"Student_id": student_id,
             "Status": "Deleted"}
