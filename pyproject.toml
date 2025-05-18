@@ -1,7 +1,7 @@
 [project]
 name = "agentic-ai"
 version = "0.1.0"
-description = ""
+description = "Learning agentic AI from basics to advance, creating tools using different api keys."
 authors = [
     {name = "Ghulam Mustfa",email = "mustfafsd41gm@gmail.com"}
 ]
