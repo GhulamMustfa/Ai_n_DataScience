@@ -1,0 +1,69 @@
+## 🔰 BASICS
+
+| Task                           | Command                   |
+| ------------------------------ | ------------------------- |
+| Create new project             | `poetry new project-name` |
+| Init Poetry in existing folder | `poetry init`             |
+| Install all dependencies       | `poetry install`          |
+| Add a package                  | `poetry add requests`     |
+| Add a dev package              | `poetry add --dev black`  |
+| Remove a package               | `poetry remove requests`  |
+
+---
+
+## 📦 DEPENDENCIES
+
+| Task                    | Command                     |
+| ----------------------- | --------------------------- |
+| List installed packages | `poetry show`               |
+| Check outdated packages | `poetry show --outdated`    |
+| Update all packages     | `poetry update`             |
+| Update specific package | `poetry update requests`    |
+| Add latest version      | `poetry add fastapi@latest` |
+
+---
+
+## 🌐 ENVIRONMENT
+
+| Task                        | Command                       |
+| --------------------------- | ----------------------------- |
+| Use specific Python version | `poetry env use python3.13`   |
+| List environments           | `poetry env list`             |
+| Remove env                  | `poetry env remove python`    |
+| Enter virtualenv shell      | `poetry shell`                |
+| Run a command in env        | `poetry run python script.py` |
+
+---
+
+## 📜 PROJECT FILES
+
+| File             | Purpose                                     |
+| ---------------- | ------------------------------------------- |
+| `pyproject.toml` | Your project config + dependencies          |
+| `poetry.lock`    | Exact resolved versions for reproducibility |
+| `poetry.lock`    | Command poetry lock --> resolve it          |
+
+---
+
+## 🧪 TESTING / BUILDING / PUBLISHING
+
+| Task                   | Command                       |
+| ---------------------- | ----------------------------- |
+| Run tests (if defined) | `poetry run pytest`           |
+| Build package          | `poetry build`                |
+| Publish to PyPI        | `poetry publish`              |
+| Publish to test PyPI   | `poetry publish -r test-pypi` |
+
+---
+
+## 🧠 ADVANCED
+
+| Task                         | Command                                                          |
+| ---------------------------- | ---------------------------------------------------------------- |
+| Set config                   | `poetry config virtualenvs.in-project true`                      |
+| View config                  | `poetry config --list`                                           |
+| Export to `requirements.txt` | `poetry export -f requirements.txt --without-hashes -o reqs.txt` |
+
+---
+
+opencv_python-headless is removed and it is used in clouds like docker
