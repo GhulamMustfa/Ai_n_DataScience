@@ -1,13 +1,13 @@
-# poetry run uvicorn 06-DataBase.sql:app
+# poetry run uvicorn 06-DataBase.nosql:app
 
 from fastapi import FastAPI  # type: ignore
-from pymongo import MongoClient  # type: ignore
-from dotenv import load_dotenv # type: ignore
-import os
 from pydantic import BaseModel # type: ignore
-import datetime
 from typing import List, Optional, Dict, Any
+import os
+from dotenv import load_dotenv # type: ignore
+from pymongo import MongoClient  # type: ignore
 from bson import ObjectId  # type: ignore
+import datetime
 
 
 app = FastAPI()
@@ -76,6 +76,15 @@ def read_todos():
 @app.get("/todos/{id}")
 def get_todo_by_id(id: str):
     try:
+        # Validate if the id is a valid ObjectId
+        if not ObjectId.is_valid(id):
+            return {
+                "data": [],
+                "error": "Invalid ID format",
+                "message": "The ID is not valid or not available",
+                "status": "failed"
+            }
+            
         todo = collection.find_one({"_id": ObjectId(id)})
         if todo is None:
             return {
@@ -84,19 +93,24 @@ def get_todo_by_id(id: str):
                 "message": "Todo not found",
                 "status": "failed"
             }
+            
+        # Convert todo to dict and ensure all fields exist
+        todo_dict = {
+            "id": str(todo.get("_id", "")),
+            "title": todo.get("title", ""),
+            "description": todo.get("description", ""),
+            "status": todo.get("status", ""),
+            "created at": todo.get("created at", datetime.datetime.now())
+        }
+        
         return {
-            "data": {
-                "id": str(todo["_id"]),
-                "title": todo["title"],
-                "description": todo["description"],
-                "status": todo["status"],
-                "created at": todo["created at"],
-            },
+            "data": todo_dict,
             "error": None,
             "message": "Todo Read Successfully",
-            "status": "Success"
+            "status": "success"
         }
     except Exception as e:
+        print(f"Error in get_todo_by_id: {str(e)}")  # Debug print
         return {
             "data": [],
             "error": "Error reading todo",
