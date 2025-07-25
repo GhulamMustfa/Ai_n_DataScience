@@ -18,6 +18,9 @@
 # str1 = str1.find("L")
 # print(str1)
 
+# x = str(input("enter a number : "))
+# print(x)
+
 
 ''' IF ELSE ElIF '''
 
@@ -114,6 +117,21 @@
 # print(car_fav)
 
 
+'''LOOPS'''
+
+# for num in range(1,21):
+#     print(num)
+
+# first_names = ["BlueRay ", "Upchuck ", "Lojack ","Gizmo ", "Do-Rag "]
+# for a in first_names:
+#     print(a)
+
+# x = 3
+# while x <= 9:
+#     print(x)
+#     x+=1
+
+
 '''DICTIONARY'''
 
 # cars = {
@@ -174,3 +192,4 @@
 
 
 '''FUNCTIONS'''
+
