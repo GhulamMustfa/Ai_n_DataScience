@@ -116,6 +116,18 @@
 # car_fav = cars[0]
 # print(car_fav)
 
+# # iter()
+# mytuple = ("apple", "banana", "cherry")
+# myit = iter(mytuple)
+
+# print(next(myit))
+# print(next(myit))
+# print(next(myit))
+
+# # or (without iter())
+# for x in mytuple:
+#   print(x)
+
 
 '''LOOPS'''
 
@@ -200,28 +212,44 @@
 # add_num(4, 5, 'ja ja', 33)
 
 
-
-'''OOPS'''
-
 '''CLASS'''
 
-class cars:
-    def __init__(self):
-        pass
+# # Object Oriented Programming
 
-# Defining a class
-class Animal:
-    def __init__(self, name):
-        self.naame = name
+# class cars:
+#     def __init__(self):
+#         pass
+
+# # __init__
+# class Name:
+#     def __init__(self, name, age):
+#         self.naam = name
+#         self.age = age
     
-    def speak(self):
-        print(f"{self.naame} makes a sound")
+#     def eats(self):
+#        print(f"{self.naam} is {self.age} old")
 
-# Creating objects
-dog = Animal("Dog")
-cat = Animal("Cat")
+# p1 = Name('ghulam', 878)
+# print(p1.naam)
+# p1.eats()
+# del p1
 
-# Calling methods
-dog.speak()   # Dog makes a sound
-cat.speak()   # Cat makes a sound
+# # Inheritence
+# class student(Name):
+#     pass
 
+# p2 = student('mustfa', 17)
+# print(p2.age)
+# p2.eats()
+
+# # __str__
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.age = age
+
+#   def __str__(self):
+#     return f"{self.name}({self.age})"
+
+# p1 = Person("John", 36)
+# print(p1)
