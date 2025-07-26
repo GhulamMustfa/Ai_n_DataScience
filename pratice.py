@@ -191,5 +191,37 @@
 # print(customers545[0]["address"])
 
 
-'''FUNCTIONS'''
+'''FUNCTION'''
+
+# def add_num(x = 6, y = 3, *other):
+#     total = x + y
+#     print(total)
+#     print(other)
+# add_num(4, 5, 'ja ja', 33)
+
+
+
+'''OOPS'''
+
+'''CLASS'''
+
+class cars:
+    def __init__(self):
+        pass
+
+# Defining a class
+class Animal:
+    def __init__(self, name):
+        self.naame = name
+    
+    def speak(self):
+        print(f"{self.naame} makes a sound")
+
+# Creating objects
+dog = Animal("Dog")
+cat = Animal("Cat")
+
+# Calling methods
+dog.speak()   # Dog makes a sound
+cat.speak()   # Cat makes a sound
 
